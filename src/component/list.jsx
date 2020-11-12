@@ -6,7 +6,7 @@ import {faSpinner} from '@fortawesome/free-solid-svg-icons'
 
 const List =()=>{
 
-const API = 'http://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
+const API = 'https://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
 
 
     const [pelis, setPelis] = useState(
