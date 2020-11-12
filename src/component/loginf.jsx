@@ -1,6 +1,5 @@
 import React, {Fragment }from 'react';
 import FacebookLogin from 'react-facebook-login';
-import { GoogleLogin } from 'react-google-login';
 
 
 const Loginf = () => {
@@ -16,11 +15,7 @@ const Loginf = () => {
        
       }
  
-      const responseGoogle = (response) => {
-        window.location.href = '/peliculas';
-        localStorage.setItem("logged", true);
-        }
-
+      
 
     return (
         <Fragment>
@@ -47,18 +42,6 @@ const Loginf = () => {
    
      </div>
    
-<p>O</p>
-
-
-     <div className="form-group">
-<GoogleLogin
-    clientId="128873676278-533nttib1u4osjh2isgp38lk5jt9h2bq.apps.googleusercontent.com"
- //   buttonText="LOGIN"
-    onSuccess={responseGoogle}
-    onFailure={responseGoogle}
-    cookiePolicy={'single_host_origin'}
-  />
-     </div>
 
 </div>
 </div>

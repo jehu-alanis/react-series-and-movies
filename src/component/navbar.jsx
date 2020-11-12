@@ -21,7 +21,7 @@ const create =()=>{
 {JSON.parse(localStorage.getItem("logged"))  === true ? 
  
 <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" sticky="top">
-    <Navbar.Brand href="#home">React Peliculasssss</Navbar.Brand>
+    <Navbar.Brand href="#home">React Movies</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav" >
  
