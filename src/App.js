@@ -30,11 +30,9 @@ function App() {
 <Router>
 <Navbar />
 
-<Route path="/" exact component={Loginf}    />
-
+<Route path="/" exact component={List}    />
 
 <Route path="/peliculas" exact component={List}    />
-
 <Route path="/descripcion/:id"component={Descripcion}    />
 <Route path="/politica" exact component={Politica}    />
 
