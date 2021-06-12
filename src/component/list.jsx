@@ -15,6 +15,7 @@ const API = 'https://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
         loading: true,
         searchTerm: "",
         error: "",
+        name:''
     });
 
      
@@ -44,9 +45,6 @@ const API = 'https://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
       useEffect(() => {
         // const res = await fetch("../../assets/data.json");
        
-     
-     
-     
         getMovie();
       }, []);
 
@@ -69,10 +67,11 @@ const API = 'https://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
           data: data.Search,
           searchTerm: "",
           error: "",
+          name:"1"
         });
       };
 
-
+      
 
       const { data,loading} = pelis;
 
@@ -91,11 +90,12 @@ return(
             <div className="col-md-4 offset-md-4 p-4 ">
               <form onSubmit={handleSubmit}>
                 <input
+                 name="name"
                   type="text"
                   className="form-control "
                   placeholder="Search Movies or Series"
-                  onChange={(e) => setPelis({...pelis, searchTerm: e.target.value })}
-                  value={pelis.searchTerm}
+                  onChange={(e) => setPelis({...pelis, searchTerm: e.target.value,name:"1" })}
+                  value={pelis.searchTerm|| ''}
                   autoFocus
                 />
               </form>

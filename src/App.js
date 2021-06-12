@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import 'bootswatch/dist/superhero/bootstrap.min.css';
-import Loginf from './component/loginf'
+
 import Descripcion from './component/descripcion'
 import Navbar from './component/navbar'
 import Politica from './component/politica'

@@ -7,7 +7,7 @@ import {faStar,faSpinner} from '@fortawesome/free-solid-svg-icons'
 const Descripcion = () => {
     
 
-    const API ='https://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
+ const API ='https://www.omdbapi.com/?i=tt3896198&apikey=b4b5bba';
 
 
 
